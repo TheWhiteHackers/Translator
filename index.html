@@ -4,20 +4,86 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+
     <title>Document</title>
+<style>
+#flbox{
+    margin-top: 15px;
+    width: 49%;
+    background-color: rgb(69, 69, 69);
+    float: left;
+    text-align: center;
+}
+#tlbox{
+    margin-top: 15px;
+    width: 49%;
+    background-color: rgb(69, 69, 69);
+    float: left;
+    text-align: center;
+}
+#translate{
+    position: relative;
+    left: 50%;
+    width: 100px;
+    margin-left: -50px;
+}
+h1{
+    text-align: center;
+    font-family: 'Kanit', sans-serif;
+    color: rgb(69, 69, 69);
+    font-size: 50px;
+}
+#motherbox{
+    background-color: rgb(69, 69, 69);
+    margin-bottom: 30px;
+    height: 280px;
+    border-radius: 5px;
+}
+#translate{
+    padding: 10px;
+    font-family: 'Kanit', sans-serif;
+}
+#volumefrom{
+    color: white;
+    padding: 7px;
+    margin-bottom: 7px;
+}
+#volumeto{
+    color: white;
+    padding: 7px;
+    margin-bottom: 5px;
+}
+
+</style>
 </head>
 <body>
+   
     
-    
+<h1>Translator</h1>    
+<div id="motherbox">
+<div id="flbox">
+    <div id="volumefrom">
+        <i class="fa-solid fa-volume-high fa-2xl"></i>
+        <i class="fa-solid fa-copy fa-2xl"></i>
+    </div>  
     <select id="from-lang"></select>
-    <select id="to-lang"></select>
-
-<br>
+    <br><br>
     <textarea name="" id="fromtext" cols="30" rows="10" placeholder= "put text here"></textarea>
+</div>
+<div id="tlbox">
+    <div id="volumeto">
+        <i class="fa-solid fa-volume-high fa-2xl"></i>
+        <i class="fa-solid fa-copy fa-2xl"></i>
+    </div>
+    <select id="to-lang"></select>
+    <br><br>
     <textarea name="" id="totext" cols="30" rows="10"></textarea>
-<br>
-<button id="translate">Translate</button>
+</div>
 
+<button id="translate">Translate</button>
+</div>
 
 
 
