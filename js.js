@@ -4,7 +4,6 @@ const btnTranslate = document.getElementById("translate")
 const fromText = document.getElementById("fromtext");
 const toText = document.getElementById("totext");
 
-
 for (let i in languages){
     let option = `<option value=${i}>${languages[i]}</option>`;
     fromLang.insertAdjacentHTML("beforeend", option);
@@ -13,8 +12,6 @@ for (let i in languages){
     fromLang.value="en-GB";
     toLang.value="es-ES";
 }
-    
-
 
 btnTranslate.addEventListener("click", ()=>{
     const ftext = fromText.value;
@@ -27,5 +24,12 @@ btnTranslate.addEventListener("click", ()=>{
     .then(res=>res.json())
     .then(data=>{
         console.log(data);
+        toText.value = data.responseData.translatedText
     })
 })
+
+//text-to-speech
+const fromvol = document.getElementById("volumefrom");
+const tovol = document.getElementById("volumeto");
+
+// fromvol.addEventListener()
