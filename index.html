@@ -28,6 +28,8 @@
     left: 50%;
     width: 100px;
     margin-left: -50px;
+    padding: 10px;
+    font-family: 'Kanit', sans-serif;
 }
 h1{
     text-align: center;
@@ -41,10 +43,6 @@ h1{
     height: 280px;
     border-radius: 5px;
 }
-#translate{
-    padding: 10px;
-    font-family: 'Kanit', sans-serif;
-}
 #volumefrom{
     color: white;
     padding: 7px;
@@ -55,28 +53,37 @@ h1{
     padding: 7px;
     margin-bottom: 5px;
 }
+#tocopy{
+    color:white;
+}
+#fromcopy{
+    color:white;
+}
 
 </style>
 </head>
 <body>
    
     
-<h1>Translator</h1>    
+<h1>Translator</h1>  
+
 <div id="motherbox">
 <div id="flbox">
-    <div id="volumefrom">
-        <i class="fa-solid fa-volume-high fa-2xl"></i>
-        <i class="fa-solid fa-copy fa-2xl"></i>
-    </div>  
+    <div>
+        <a href=""><i id="volumefrom" class="fa-solid fa-volume-high fa-2xl"></i></a>
+        <a href=""><i id="fromcopy" class="fa-solid fa-copy fa-2xl"></i></a>
+    </div>
+    <br>  
     <select id="from-lang"></select>
     <br><br>
     <textarea name="" id="fromtext" cols="30" rows="10" placeholder= "put text here"></textarea>
 </div>
 <div id="tlbox">
-    <div id="volumeto">
-        <i class="fa-solid fa-volume-high fa-2xl"></i>
-        <i class="fa-solid fa-copy fa-2xl"></i>
+    <div>
+        <a href=""><i id="volumeto" class="fa-solid fa-volume-high fa-2xl"></i></a>
+        <a href=""><i id="tocopy" class="fa-solid fa-copy fa-2xl"></i></a>
     </div>
+    <br>
     <select id="to-lang"></select>
     <br><br>
     <textarea name="" id="totext" cols="30" rows="10"></textarea>
