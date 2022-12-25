@@ -1,5 +1,5 @@
 # Translator
 
-![translator](translatorgif.jpg)
+![translator](translatorgif.gif)
 ## Description:
 ### This is a API based translator
